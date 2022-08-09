@@ -1,0 +1,51 @@
+import "katex/dist/katex.min.css";
+import { Tex } from "./tex.js";
+
+# Parsing
+
+csmParse is a simple math expression parser. The parser evaluates
+expressions in CSM syntax and, optionally, return the LaTeX translation of
+the expression. For example, writing:
+
+```jsx
+<Tex exp={"x^2"} />
+```
+
+results in:
+
+<Tex exp={"x^2"} />
+
+CSM is not intended to replace LaTeX syntax. Instead, its purpose is to
+help relieve the burden of having to escape the `\` character twice when
+writing LaTeX in JavaScript. As such, the usual LaTeX syntax applies —
+braces are used for grouping.
+
+A few more examples:
+
+```jsx
+<Tex exp={"x^3 + y^5 - 2 = 0"} />
+```
+
+<Tex exp={"x^3 + y^5 - 2 = 0"} />
+
+```jsx
+<Tex exp={"dfrac{1+x}{1-x^2}"} />
+```
+
+<Tex exp={"dfrac{1+x}{1-x^2}"} />
+
+```jsx
+<Tex exp={"cos(x)"} />
+
+<Tex exp={"sin(x)"} />
+```
+
+<Tex exp={"cos(x)"} />
+
+<Tex exp={"sin(x)"} />
+
+```javascript
+<Tex exp={`int_{0}^{x} x^2 - y~~"dx"`} />
+```
+
+<Tex exp={`int_{0}^{x} x^2 - y~~"dx"`} />

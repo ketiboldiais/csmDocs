@@ -1,0 +1,33 @@
+import "katex/dist/katex.min.css";
+import { Res } from "./res.js";
+
+# Evaluating Expressions
+
+csmParse comes with a small library of functions for evaluating
+expressions. Results are returned as strings.
+
+## Arithmetic
+
+Basic arithmetic is supported:
+
+```jsx
+<Res exp={`1+1`} />
+<Res exp={`5^2`} />
+<Res exp={`cos(0)`} />
+<Res exp={`sin(0)`} />
+<Res exp={`sqrt(4)`} />
+<Res exp={`sqrt(-4)`} />
+<Res exp={`8^3 - ((1+5)^2 - (2^2))`} />
+<Res exp={`max(8,5,7,0,9,1)`}/>
+<Res exp={`min(4,2,1,0,-5,1)`}/>
+```
+
+<Res exp={`1+1`} />
+<Res exp={`0-8`} />
+<Res exp={`5^2`} />
+<Res exp={`cos(0)`} />
+<Res exp={`sin(-1)`} />
+<Res exp={`sqrt(4)`} />
+<Res exp={`8^3 - ((1+5)^2 - (2^2))`} />
+<Res exp={`max(8,5,7,0,9,1)`} />
+<Res exp={`min(4,2,1,0,-5,1)`} />
