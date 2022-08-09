@@ -1,4 +1,4 @@
-import { Tex } from "./tex.js";
+import { Tex } from "../components/tex";
 
 export default function Home() {
 	return (
