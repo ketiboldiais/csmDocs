@@ -49,6 +49,7 @@ export default function Home() {
 					<a href={`evaluating`}>Evaluating Expressions</a>
 				</li>
 			</ul>
+			<p>A <a href={"https://clc-i29ya9onp-ketiboldiais.vercel.app/"} target="_blank">demo calculator can be found here</a>.</p>
 		</div>
 	);
 }
